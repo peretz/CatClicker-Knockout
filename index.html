@@ -11,9 +11,9 @@
                 <ul id="cats-list"></ul>
             </div>
             <div id="cat-info">
-                <div id="cat-name"></div>
-                <img id="cat-image" src="" alt="Cat picture">
-                <div id="cat-click-counter"></div> 
+                <div id="cat-name" data-bind="text: name"></div>
+                <img id="cat-image" src="" alt="Cat picture" data-bind="click: incrementCounter, attr: {src: image}">
+                <div id="cat-click-counter" data-bind="text: clickCount"></div> 
                 <br> <br>
             </div>
         <div>
