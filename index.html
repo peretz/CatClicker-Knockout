@@ -16,11 +16,16 @@
                 </div>
                 <img id="cat-image" src="" alt="Cat picture" data-bind="click: incrementCounter, attr: {src: image}">
                 <div class="cat-detail">
-                    Count: <span data-bind="text: clickCount"></span> <br>
-                    Maturity: <span data-bind="text: maturity"></span>
+                    <strong>Count: </strong><span data-bind="text: clickCount"></span> <br>
+                    <strong>Maturity: </strong><span data-bind="text: maturity"></span> <br>
+                    <strong>Nicknames:</strong>
+                    <span data-bind="foreach: nicknames">
+                        <span data-bind="text: $data"></span>.
+                    </span>
                 </div> 
-                <br> <br>
+                <br>
             </div>
+            <div id="cat-info">
         <div>
     </body>
 
