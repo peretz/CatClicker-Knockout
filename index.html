@@ -9,7 +9,7 @@
         <div id="frame">
             <div>
                 <ul id="cats-list" data-bind="foreach: listOfCats">
-                    <li data-bind="click: $parent.setCurrentCat($index()), text: name"></li>
+                    <li data-bind="click: $parent.setCurrentCat, text: name"></li>
                 </ul>
             </div>
             <div id="cat-info" data-bind="with: currentCat">
