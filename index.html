@@ -14,12 +14,12 @@
                 <div id="cat-name">
                     Me llamo <span data-bind="text: name"></span>!
                 </div>
-                <img id="cat-image" src="" alt="Cat picture" data-bind="click: incrementCounter, attr: {src: image}">
+                <img id="cat-image" src="" alt="Cat picture" data-bind="click: incrementCounter, attr: {src: currentCat().image}">
                 <div class="cat-detail">
-                    <strong>Count: </strong><span data-bind="text: clickCount"></span> <br>
-                    <strong>Maturity: </strong><span data-bind="text: maturity"></span> <br>
+                    <strong>Count: </strong><span data-bind="text: currentCat().clickCount"></span> <br>
+                    <strong>Maturity: </strong><span data-bind="text: currentCat().maturity"></span> <br>
                     <strong>Nicknames:</strong>
-                    <span data-bind="foreach: nicknames">
+                    <span data-bind="foreach: currentCat().nicknames">
                         <span data-bind="text: $data"></span>.
                     </span>
                 </div> 

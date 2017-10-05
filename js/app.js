@@ -1,5 +1,4 @@
-var ViewModel = function() {
-
+var Cat = function() {
     this.name = ko.observable("Pedrito");
     this.image = ko.observable("images/cat1.jpg");
     this.clickCount = ko.observable(0);
@@ -22,9 +21,14 @@ var ViewModel = function() {
             return "Elder";
         }
     }, this);
+}
+
+var ViewModel = function() {
+
+    this.currentCat = ko.observable(new Cat());
 
     this.incrementCounter = function() {
-        this.clickCount(this.clickCount() + 1);
+        this.currentCat().clickCount(this.currentCat().clickCount() + 1);
     };
 }
 
