@@ -3,7 +3,7 @@ var ViewModel = function() {
     this.name = ko.observable("Pedrito");
     this.image = ko.observable("images/cat1.jpg");
     this.clickCount = ko.observable(0);
-    this.nicknames = ["Pedrin", "Cosita", "Pirruron"];
+    this.nicknames = ko.observableArray(["Pedrin", "Cosita", "Pirruron"]);
 
     this.maturity = ko.computed(function() {
         if (this.clickCount() < 5) {
