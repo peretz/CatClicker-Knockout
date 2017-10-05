@@ -1,0 +1,46 @@
+#frame {
+    width: 100%;
+    overflow: auto;
+}
+
+#cats-list {
+    float: left;
+    width: 25%;
+    list-style-type: none;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#cat-info {
+    float: right;
+    width: 70%
+}
+
+#cat-name {
+    text-align: center;
+    font-size: 30px;
+}
+
+#cat-image {
+    display: block;
+    margin: auto;
+}
+
+#cat-click-counter {
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
+}
+
+#admin-mode, #Admin-div{
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type='text'], button {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
