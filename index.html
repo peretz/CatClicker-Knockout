@@ -11,9 +11,14 @@
                 <ul id="cats-list"></ul>
             </div>
             <div id="cat-info">
-                <div id="cat-name" data-bind="text: name"></div>
+                <div id="cat-name">
+                    Me llamo <span data-bind="text: name"></span>!
+                </div>
                 <img id="cat-image" src="" alt="Cat picture" data-bind="click: incrementCounter, attr: {src: image}">
-                <div id="cat-click-counter" data-bind="text: clickCount"></div> 
+                <div class="cat-detail">
+                    Count: <span data-bind="text: clickCount"></span> <br>
+                    Maturity: <span data-bind="text: maturity"></span>
+                </div> 
                 <br> <br>
             </div>
         <div>

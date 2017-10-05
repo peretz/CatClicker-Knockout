@@ -28,7 +28,7 @@
     margin: auto;
 }
 
-#cat-click-counter {
+.cat-detail {
     text-align: center;
     font-size: 25px;
     font-style: bold;
